@@ -1,0 +1,33 @@
+Name:                vty-keyboard
+Version:             0.1
+Synopsis:            Adapter between Vty representation of keyboard
+                     inputs and the keyboard package
+License:             BSD3
+License-file:        LICENSE
+Author:              Eyal Lotem
+Maintainer:          eyal.lotem+hackage@gmail.com
+Copyright:           Copyright by Eyal Lotem (c) 2010
+Category:            Input, Keyboard
+Build-type:          Simple
+
+-- Extra files to be distributed with the package, such as examples or
+-- a README.
+-- Extra-source-files:  
+
+Cabal-version:       >=1.2
+
+
+Library
+  hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall
+
+  Exposed-modules:     Data.UI.Input.Keyboard.Vty
+
+  -- Packages needed in order to build this package.
+  Build-depends:       base >= 4 && < 5, vty >= 4.2.1.0, keyboard >= 0.1 && < 0.2
+
+  -- Modules not exported by this package.
+  -- Other-modules:       
+
+  -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
+  -- Build-tools:         
